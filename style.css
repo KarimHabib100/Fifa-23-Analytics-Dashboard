@@ -1,0 +1,115 @@
+/* ── Google Fonts ──────────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ── Base ──────────────────────────────────────────────────────────────────── */
+body, * {
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+body {
+    background-color: #0f1117;
+    color: #e0e0e0;
+    overflow-x: hidden;
+}
+
+/* ── Custom Scrollbar ─────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 7px; }
+::-webkit-scrollbar-track { background: #0f1117; }
+::-webkit-scrollbar-thumb {
+    background: #2c2f45;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover { background: #3d4266; }
+
+/* ── Dashboard Header Gradient ────────────────────────────────────────────── */
+.dashboard-header {
+    background: linear-gradient(135deg, rgba(240,165,0,0.08) 0%, rgba(26,29,46,0.0) 60%);
+    border-radius: 12px;
+    margin-bottom: 4px;
+}
+
+/* ── Card Hover — Gold Border Glow ───────────────────────────────────────── */
+.card {
+    transition: border-color 0.22s ease, box-shadow 0.22s ease;
+}
+.card:hover {
+    border-color: rgba(240, 165, 0, 0.55) !important;
+    box-shadow: 0 0 14px rgba(240, 165, 0, 0.18);
+}
+
+/* Card headers */
+.card-header { border-radius: 8px 8px 0 0 !important; }
+
+/* ── dcc.Dropdown — black text on white box ──────────────────────────────── */
+.Select-value-label,
+.Select--single .Select-value-label,
+.Select-placeholder,
+.Select-input input,
+.Select-option,
+.VirtualizedSelectOption,
+.VirtualizedSelectFocusedOption,
+.Select-menu-outer * {
+    color: #000000 !important;
+}
+
+.VirtualizedSelectFocusedOption {
+    background-color: #e0e0e0 !important;
+}
+
+/* ── RangeSlider — Gold Track ─────────────────────────────────────────────── */
+.rc-slider-track,
+.rc-slider-tracks        { background-color: #f0a500; }
+/* Cover both old and Dash-4.x rc-slider handle class names */
+.rc-slider-handle,
+.rc-slider-handle-1,
+.rc-slider-handle-2 {
+    border-color: #f0a500 !important;
+    background-color: #f0a500 !important;
+    opacity: 1 !important;
+    box-shadow: 0 0 5px rgba(240,165,0,0.5) !important;
+    width: 14px !important;
+    height: 14px !important;
+    border-radius: 50% !important;
+}
+.rc-slider-handle:hover,
+.rc-slider-handle-1:hover,
+.rc-slider-handle-2:hover { box-shadow: 0 0 8px rgba(240,165,0,0.7) !important; }
+.rc-slider-rail          { background-color: #2c2f45; }
+.rc-slider-dot           { border-color: #2c2f45 !important; background-color: #2c2f45; }
+.rc-slider-dot-active    { border-color: #f0a500 !important; }
+
+/* ── Tooltip for RangeSlider ─────────────────────────────────────────────── */
+.rc-slider-tooltip-inner {
+    background-color: #1a1d2e;
+    border: 1px solid #2c2f45;
+    color: #e0e0e0;
+    font-size: 11px;
+}
+
+/* Hide white tooltip / output boxes on RangeSlider */
+.rc-slider-handle-dragging,
+.rc-slider-tooltip,
+.rc-tooltip              { display: none !important; }
+/* Remove white background that Bootstrap adds to mark-text labels */
+.rc-slider-mark-text {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    color: #e0e0e0 !important;
+}
+
+/* ── RadioItems — White Labels ───────────────────────────────────────────── */
+.form-check-label              { color: white !important; }
+.dash-radio-items label        { color: white !important; }
+input[type="radio"] + label    { color: white !important; }
+.form-check label              { color: white !important; }
+
+/* ── Section Headers ─────────────────────────────────────────────────────── */
+h3 {
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+/* ── No horizontal scroll ────────────────────────────────────────────────── */
+.container-fluid { max-width: 100%; overflow-x: hidden; }
